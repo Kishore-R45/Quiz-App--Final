@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-background-radius: 32; -fx-border-radius: 32;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.quiz_app_javafx.SignUpController">
+    <children>
+        <ImageView fitHeight="410.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@back.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="350.0" fitWidth="320.0" layoutX="-28.0" layoutY="35.0" pickOnBounds="true">
+            <image>
+                <Image url="@Remove background project.png" />
+            </image></ImageView>
+        <ImageView blendMode="MULTIPLY" fitHeight="374.0" fitWidth="303.0" layoutX="273.0" layoutY="13.0" opacity="0.51" pickOnBounds="true">
+            <image>
+                <Image url="@bb.png" />
+            </image>
+            <effect>
+                <BoxBlur />
+            </effect></ImageView>
+        <Label layoutX="290.0" layoutY="64.0" text="Username" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="su_username" layoutX="291.0" layoutY="93.0" prefHeight="26.0" prefWidth="267.0" promptText="Enter your name" style="-fx-background-radius: 10;">
+            <effect>
+                <DropShadow />
+            </effect></TextField>
+        <PasswordField fx:id="su_password" layoutX="291.0" layoutY="163.0" prefHeight="26.0" prefWidth="267.0" promptText="Enter your password" style="-fx-background-radius: 10;">
+            <effect>
+                <DropShadow />
+            </effect>
+        </PasswordField>
+        <Label layoutX="292.0" layoutY="132.0" text="Password" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="292.0" layoutY="200.0" text="Do you like Java" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="su_terms" layoutX="292.0" layoutY="263.0" mnemonicParsing="false" text="Agree Terms and Conditions" textFill="WHITE" underline="true" />
+        <RadioButton fx:id="su_java_yes" layoutX="322.0" layoutY="232.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+        <RadioButton fx:id="su_java_no" layoutX="405.0" layoutY="232.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+        <Button fx:id="btn_signup" layoutX="380.0" layoutY="293.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="87.0" style="-fx-background-radius: 50; -fx-background-color: #A7233A; -fx-cursor: hand;" text="Sign Up" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="14.0" />
+            </font>
+            <effect>
+                <DropShadow height="60.77" radius="33.395" spread="0.39" width="74.81">
+                    <color>
+                        <Color red="0.6549019813537598" green="0.13725490868091583" blue="0.22745098173618317" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </Button>
+        <Label layoutX="322.0" layoutY="355.0" text="Already have an account?" textFill="WHITE">
+            <font>
+                <Font name="Verdana Italic" size="11.0" />
+            </font>
+        </Label>
+        <Button fx:id="btn_signin1" layoutX="465.0" layoutY="349.0" mnemonicParsing="false" style="-fx-cursor: hand; -fx-background-color: transparent;" text="Sign In" textFill="#a7233a" underline="true">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <Label layoutX="359.0" layoutY="14.0" text="Sign Up" textFill="#a7233a">
+            <font>
+                <Font name="Bookman Old Style" size="34.0" />
+            </font>
+            <effect>
+                <Glow />
+            </effect>
+        </Label>
+    </children>
+</AnchorPane>

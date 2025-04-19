@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: black; -fx-background-radius: 32; -fx-border-radius: 32;"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="javafx.quiz_app_javafx.quizController">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@back.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="question" layoutX="57.0" layoutY="35.0" prefHeight="100.0" prefWidth="486.0"
+               text="1. What is the capital city of France?" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="Inter Semi Bold" size="21.0" />
+            </font>
+        </Label>
+        <Button fx:id="opt1" onAction="#opt1Clicked" layoutX="57.0" layoutY="155.0"
+                prefHeight="54.0" prefWidth="196.0" style="-fx-background-color: orange;">
+            <font>
+                <Font name="Inter Semi Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="opt2" onAction="#opt2Clicked" layoutX="332.0" layoutY="155.0"
+                prefHeight="54.0" prefWidth="196.0" style="-fx-background-color: orange;">
+            <font>
+                <Font name="Inter Semi Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="opt3" onAction="#opt3Clicked" layoutX="57.0" layoutY="232.0"
+                prefHeight="54.0" prefWidth="196.0" style="-fx-background-color: orange;">
+            <font>
+                <Font name="Inter Semi Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="opt4" onAction="#opt4Clicked" layoutX="332.0" layoutY="232.0"
+                prefHeight="54.0" prefWidth="196.0" style="-fx-background-color: orange;">
+            <font>
+                <Font name="Inter Semi Bold" size="17.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

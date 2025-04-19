@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-radius: 32; -fx-border-radius: 32; -fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.quiz_app_javafx.HomeController">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@back.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="318.0" fitWidth="305.0" layoutX="148.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Remove background project.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="welcome_label" layoutX="180.0" layoutY="191.0" text="Welcome Kishore !" textFill="#00ff9c">
+            <font>
+                <Font name="Verdana Bold Italic" size="23.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Label>
+        <Button fx:id="btn_play" layoutX="236.0" layoutY="246.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="128.0" style="-fx-cursor: hand; -fx-background-radius: 40;" text="Play">
+            <font>
+                <Font name="OCR A Extended" size="20.0" />
+            </font>
+            <effect>
+                <DropShadow height="44.39" radius="19.942500000000003" spread="0.23" width="37.38">
+                    <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #001220; -fx-background-radius: 32;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.quiz_app_javafx.SignInController">
+    <children>
+        <ImageView fitHeight="414.0" fitWidth="647.0" pickOnBounds="true">
+            <image>
+                <Image url="@back.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="349.0" fitWidth="319.0" layoutX="324.0" layoutY="42.0" nodeOrientation="INHERIT" pickOnBounds="true">
+            <image>
+                <Image url="@Remove background project.png" />
+            </image>
+        </ImageView>
+        <ImageView blendMode="MULTIPLY" fitHeight="349.0" fitWidth="303.0" layoutX="35.0" layoutY="28.0" opacity="0.5" pickOnBounds="true" AnchorPane.topAnchor="28.0">
+            <image>
+                <Image url="@bb.png" />
+            </image>
+            <effect>
+                <BoxBlur />
+            </effect></ImageView>
+        <Label layoutX="54.0" layoutY="100.0" text="Username" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="si_username" layoutX="55.0" layoutY="138.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter your username" style="-fx-background-radius: 10;">
+            <effect>
+                <DropShadow />
+            </effect>
+        </TextField>
+        <PasswordField fx:id="si_password" layoutX="55.0" layoutY="216.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter your password" style="-fx-background-radius: 10;">
+            <effect>
+                <DropShadow />
+            </effect>
+        </PasswordField>
+        <Button fx:id="btn_signin" layoutX="136.0" layoutY="274.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="82.0" style="-fx-background-color: #A7233A; -fx-background-radius: 50; -fx-cursor: hand;" text="Sign In" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+            <font>
+                <Font name="Verdana Bold" size="14.0" />
+            </font>
+            <effect>
+                <DropShadow height="81.82" radius="42.75" spread="0.36" width="91.18">
+                    <color>
+                        <Color red="0.621052622795105" green="0.28752437233924866" blue="0.28752437233924866" />
+                    </color>
+                </DropShadow>
+            </effect></Button>
+        <Label layoutX="78.0" layoutY="334.0" text="Don't have an account ?" textFill="WHITE">
+            <font>
+                <Font name="Verdana Italic" size="11.0" />
+            </font>
+        </Label>
+        <Button fx:id="btn_signup1" layoutX="211.0" layoutY="330.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign Up" textFill="#a7233a" underline="true">
+            <font>
+                <Font name="Verdana Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="127.0" layoutY="40.0" text="Sign In" textFill="#a7233a">
+            <font>
+                <Font name="Bookman Old Style" size="34.0" />
+            </font>
+            <effect>
+                <Glow />
+            </effect></Label>
+        <Label layoutX="55.0" layoutY="183.0" text="Password" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold" size="16.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
